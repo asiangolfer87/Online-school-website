@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 :root {
   --pink: #ff046f;
@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   text-decoration: none;
   outline: none;
@@ -227,7 +227,7 @@ header .fa-bars {
 }
 
 .home::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -25rem;
   left: 50%;
@@ -457,7 +457,7 @@ textarea:focus {
   resize: none;
 }
 
-.contact .row .form-container input[type="submit"] {
+.contact .row .form-container input[type='submit'] {
   width: 17rem;
   background: var(--pink);
   color: #fff;
@@ -465,10 +465,16 @@ textarea:focus {
   font-size: 2rem;
   transition: 0.2s;
 }
-.contact .row .form-container input[type="submit"]:hover {
+.contact .row .form-container input[type='submit']:hover {
   background: none;
   color: var(--pink);
   border: 0.2rem solid var(--pink);
+}
+
+/* Center Button on mobile screen */
+.about .row .content a {
+  display: flex;
+  justify-content: center;
 }
 
 .about .row .content button:hover {
